@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Airlines</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Airlines</h1>
+    <a href="/">Back to Home</a>
+    <ul>
+        {% for airline in airlines %}
+            <li>
+                {{ airline.name }} ({{ airline.code }}) - Base Airport: {{ airline.base_airport_name }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

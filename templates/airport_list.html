@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Airports</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Airports</h1>
+    <a href="/">Back to Home</a>
+    <ul>
+        {% for airport in airports %}
+            <li>
+                {{ airport.name }} - Runways: {{ airport.runway_count }}, Capacity: {{ airport.capacity }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

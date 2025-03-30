@@ -1,0 +1,4 @@
+__pycache__
+.venv
+.vscode
+project_package\__pycache__
